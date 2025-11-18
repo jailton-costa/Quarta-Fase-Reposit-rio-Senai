@@ -1,0 +1,150 @@
+
+:root {
+  --bg-dark: #0D0D0D;
+  --bg-light: #F2F2F2;
+  --primary: #333;
+  --font-light: #636D73;
+  --radius: 10px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+input, select{
+  padding: 12px;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+  width: 100%;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+input:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  background-color: #636D73;
+  width: 40%;
+  border-color: var(--primary);
+
+}
+
+button {
+  padding: 12px 18px;
+  border-radius: var(--radius);
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+button:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.clientes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+.cliente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  width: 300px;
+  border-radius: var(--radius);
+  background-color: #636D73;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.cliente:hover {
+  transform: translateY(-4px);
+}
+
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-image: url("./public/image.png");
+  background-size: cover;
+  background-position: center;  
+}
+
+
+/* -------------------- */
+.d1 {
+  
+  background-color: #636D73;
+  width: 100%;
+  padding: 20px;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  box-shadow: 0 0 15px var(--font-light);
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.h1inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.imgPri {
+  width: 60px;
+  height: auto;
+}
+.img2 {
+  width: 60px;
+  height: auto;
+}
+
+.flex1 {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.h2user{
+  color: #BF6550;
+}
+
+/* deu problema na hora de intalar o tailndecss, vou usar o css normal mesmo kkkkk*/
